@@ -1,73 +1,32 @@
 <!DOCTYPE html>
-<html lang="pt-br">
+<html>
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>New System Estoril</title>
-    <link rel="stylesheet" href="styles.css">
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+	<title>SiderBar</title>
+	<meta charset="utf-8">
+	<link rel="stylesheet" type="text/css" href="style.css">
 </head>
 <body>
-    <div class="container">
-        <div class="sidebar">
-            <h2>Filiais</h2>
-            <ul>
-                <li><a href="#">Santos</a></li>
-                <li><a href="#">Praia Grande</a></li>
-                <li><a href="#">Sào Vicente</a></li>
-                <li><a href="#">Guarujá</a></li>
-            </ul>
-        </div>
-        <div class="main_content">
-            <div class="header">
-                Estoril Renault
-            </div>
-            <div class="info"> 
-                <div class="table-responsive">
-                    <table class="table table-striped table-dark">
-                        <tr class="bg-info">
-                            <th>nome</th>
-                            <th>chapa</th>
-                            <th>email</th>
-                            <th>usuario</th>
-                            <th>setor</th>
-                            <th>ramal</th>
-                            <th>vnc</th>
-                        </tr>
-                        <tbody id="myTable">
+	<div class="header">
+		<h2>titulo da página</h2>
+		<p>Admin</p>
+	</div>
+	<div class="sidebar">
+		<div class="avatar">
+			<img src="C:\Users\estoril\Pictures\avatar.png" alt="avatar">
+			<p>Admin</p>
+		</div>
+		<ul>
+			<li><a href="#">santos</a><span></span></li>
+			<li><a href="#">praia grande</a><span></span></li>
+			<li><a href="#">são vicente</a><span></span></li>
+			<li><a href="#">guarujá</a><span></span></li>
+		</ul>
+	</div>
 
-                        </tbody>
-                    </table>
-                    <script>
-                        var myArray = [
-                            {'nome':'Sergio Jr','chapa':975748,'email':'sergio@estoril.com',
-                            'usuario':'U00279','setor':'Infomatica','ramal':1710,'vnc':'126.0.103.181'},
-                            {'nome':'Fernando','chapa':975509,'email':'fernando@estoril.com',
-                            'usuario':'U00157','setor':'Infomatica','ramal':1710,'vnc':'126.0.103.60'},
-                            {'nome':'Jessyca','chapa':974590,'email':'jessyca@estoril.com',
-                            'usuario':'U00278','setor':'Financeiro','ramal':1704,'vnc':'126.0.103.121'}
-                        ]
-                        buildTable(myArray)
-                        function buildTable(data){
-                            var table = document.getElementById('myTable')
-
-                            for (var i = 0; i < data.length; i++){
-                                var row = `<tr>
-                                            <td>${data[i].nome}</td>
-                                            <td>${data[i].chapa}</td>
-                                            <td>${data[i].email}</td>
-                                            <td>${data[i].usuario}</td>
-                                            <td>${data[i].setor}</td>
-                                            <td>${data[i].ramal}</td>
-                                            <td>${data[i].vnc}</td>
-                                           </tr>`
-                                    table.innerHTML += row
-                            }
-                        }
-                    </script>
-                </div>
-            </div>
-        </div>
-    </div>
+	<div class="main">
+		<div class="search">
+			<input placeholder="Pesquisar">
+		</div>
+	</div>
 </body>
 </html>

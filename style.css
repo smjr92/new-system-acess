@@ -1,0 +1,105 @@
+*{
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	list-style: none;
+	font-family: sans-serif;
+	text-decoration: none;
+	outline: none;
+}
+input, button{
+	font-family: sans-serif;
+}
+button{
+	cursor: pointer;
+}
+.header{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	width: 100%;
+	height: 50px;
+	background: #fcba03;
+	padding: 15px;
+	top: 0;
+	text-transform: uppercase;
+	font-size: 18px;
+	font-weight: bold;
+	position: relative;
+}
+.header p{
+	font-size: 14px;
+	position: absolute;
+	right: 0;
+	margin-right: 30px;
+	background: #343536;
+	padding: 10px;
+	color: #fff;
+	border-radius: 2px;
+}
+.sidebar{
+	background: #343536;
+	color: #fff;
+	display: flex;
+	flex-direction: column;
+	width: 200px;
+	height: 100%;
+	position: fixed;
+}
+.sidebar img{
+	width: 150px;
+}
+
+.sidebar .avatar{
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	margin-top: 20px;
+}
+.sidebar p{
+	margin-top: 15px;
+	font-size: 20px;
+}
+ul{
+	margin-top: 80px;
+}
+ul li {
+	display: flex;
+	justify-content: space-between;
+	cursor: pointer;
+	height: 40px;
+}
+
+li a{
+	display: flex;
+	color: #fff;
+	text-transform: uppercase;
+	margin-left: 20px;
+	align-items: center;
+}
+ul li span{
+	display: flex;
+	padding: 3px;
+	background: #28abfa;
+	justify-content: center;
+	align-items: center;
+	visibility: hidden;
+}
+ul li:hover{
+	background: rgba(255, 255, 255, 0.08);
+}
+ul li:hover span{
+	visibility: visible;
+}
+.main{
+	margin: 20px 30px 20px 230px;
+}
+.main .search input{
+	width: 50%;
+	height: 50px;
+	padding: 10px;
+	font-size: 18px;
+	color: #333;
+	font-family: sans-serif;
+}
